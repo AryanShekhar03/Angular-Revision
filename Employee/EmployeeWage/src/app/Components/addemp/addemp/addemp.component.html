@@ -14,11 +14,11 @@
         </div>
     </header>
     <div class="form-content">
-        <form [formgroup]="registerForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="form-head"> Employee PayRoll form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" formControlName="Name" placeholder="Your name..."
+                <input class="input" type="text" id="name" name="name" formControlName="name" placeholder="Your name..."
                     required>
 
             </div>
@@ -70,16 +70,16 @@
             </div>
 
             <div class="row-content">
-                <label class="label text" for="salary" formControlName="salary">Choose your salary</label>
+                <label class="label text" for="salary" >Choose your salary</label>
                 <input class="input" type="range" name="salary" id="salary" min="30000" max="50000" step="100"
-                    value="40000">
+                    value="40000"formControlName="salary">
                 <output class="salary-output text" for="salary">40000</output>
             </div>
 
             <div class="row-content">
                 <label class="label text" for="startDate" formControlName="startDate">Start Date</label>
-                <div>
-                    <select id="day" name="Day">
+                <div formControlName="startDate">
+                    <select id="day" name="Day" formControlName="startDate">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -145,7 +145,7 @@
             <div class="buttonParent">
                 <a href="./EmpPayRoll.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="submit" class="button submitButton" id="submitButton"(click)="onSubmit">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>

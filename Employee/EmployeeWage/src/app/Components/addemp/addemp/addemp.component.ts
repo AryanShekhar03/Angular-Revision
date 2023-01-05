@@ -1,5 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormGroupDirective, FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormGroupDirective, FormBuilder ,ReactiveFormsModule} from '@angular/forms';
 import { UserService } from 'src/app/Service/user.service';
 
 
@@ -20,7 +20,7 @@ export class AddempComponent implements OnInit {
       gender: ['', Validators.required],
       department: ['', Validators.required],
       salary: ['', Validators.required],
-      startDate: ['', Validators.required],
+      // startDate: ['', Validators.required],
       profile: ['', Validators.required],
       
   });
@@ -37,7 +37,7 @@ export class AddempComponent implements OnInit {
       gender:this.registerForm.value.gender,
       department: this.registerForm.value.department,
       salary: this.registerForm.value.salary,
-      startDate: this.registerForm.value.startDate,
+      // startDate: this.registerForm.value.startDate,
       profile:this.registerForm.value.profile
       }
       this.user.employee(employee).subscribe((result:any)=>{
