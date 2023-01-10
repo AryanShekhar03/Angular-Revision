@@ -61,16 +61,17 @@
             </div>
 
             <div class="row-content">
-                <label class="label text" for="salary" formControlName="salary">Choose your salary</label>
+                <label class="label text" for="salary" >Choose your salary</label>
                 <input class="input" type="range" name="salary" id="salary" min="30000" max="50000" step="100"
-                    value="40000">
-                <output class="salary-output text" for="salary">40000</output>
+                    value="40000" formControlName="salary">
+                <label class="salary-output text" for="salary">40000</label>
             </div>
 
             <div class="row-content">
                 <label class="label text" for="startDate" >Start Date</label>
+                <input type="date" id="start" name="jobstart" value="2016-01-01" min="2016-01-01" max="2022-1012" formControlName="startDate">
                 
-                    <select id="day" name="Day"formControlName="startDate">
+                    <!-- <select id="day" name="Day"formControlName="startDate">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -125,7 +126,7 @@
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
                     </select>
-                
+                 -->
             </div>
 
             <div class="row-content">

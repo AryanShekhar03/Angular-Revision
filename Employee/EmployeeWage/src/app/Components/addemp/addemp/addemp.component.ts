@@ -29,6 +29,7 @@ export class AddempComponent implements OnInit {
       department:this.formBuilder.array([],[ Validators.required]),
       profile: ['', Validators.required],
       startDate:['', Validators.required],
+      salary:['', Validators.required],
       
   });
 }
@@ -59,6 +60,7 @@ onCheckboxChange(event:any) {
       department:this.registerForm.value.department,
       profile:this.registerForm.value.profile,
       startDate:this.registerForm.value.startDate,
+      salary:this.registerForm.value.salary
       }
       this.user.addemployee(employees).subscribe((result:any)=>{
         console.log(result)

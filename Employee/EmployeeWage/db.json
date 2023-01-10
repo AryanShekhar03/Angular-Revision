@@ -84,6 +84,27 @@
       "profile": "../IMG/Ellipse -1.png",
       "startDate": "2020",
       "id": 30
+    },
+    {
+      "name": "shyam",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "profile": "../IMG/Ellipse -3.png",
+      "startDate": "2020-01-09",
+      "id": 31
+    },
+    {
+      "name": "risha",
+      "gender": "female",
+      "department": [
+        "HR"
+      ],
+      "profile": "../IMG/Ellipse -1.png",
+      "startDate": "2023-01-11",
+      "salary": 32500,
+      "id": 32
     }
   ]
 }
