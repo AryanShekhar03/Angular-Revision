@@ -8,9 +8,9 @@ export class UserService {
 
   constructor(private httpservice:HttpClient) { 
 }
-employee(data: any) {
+addemployee(data: any) {
   
-  return this.httpservice.post('http://localhost:3000/employees',data)
+  return this.httpservice.post("http://localhost:3000/employee",data)
 }
 employeeget() {
   let header = {
@@ -19,7 +19,7 @@ employeeget() {
      
     })
   }
-  return this.httpservice.get('http://localhost:3000/employees',header)
+  return this.httpservice.get('http://localhost:3000/employee',header)
 }
 }
 

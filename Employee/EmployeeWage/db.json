@@ -1,3 +1,89 @@
 {
-    "employees": [{"first_name": "Sebastian"}]
+  "employee": [
+    {
+      "name": "mohit Sharma",
+      "profile": "../../../assets/Ellipse -7.png",
+      "gender": "female",
+      "id": 20,
+      "startDate": "2018-11-28",
+      "department": []
+    },
+    {
+      "name": "Aaryan Shekhar",
+      "gender": "male",
+      "profile": "../IMG/Ellipse -2.png",
+      "id": 21
+    },
+    {
+      "name": "Aaryan Shekhar",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "id": 22
+    },
+    {
+      "name": "rahul anand",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "id": 23
+    },
+    {
+      "name": "rahul anand",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "id": 24
+    },
+    {
+      "name": "goswami singh",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "startDate": "2020",
+      "id": 25
+    },
+    {
+      "name": "sumit",
+      "gender": "female",
+      "department": false,
+      "profile": "../IMG/Ellipse -3.png",
+      "startDate": "Sept",
+      "id": 26
+    },
+    {
+      "name": "n Shekhar",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "startDate": "2020",
+      "id": 27
+    },
+    {
+      "name": "n Shekhar",
+      "gender": "male",
+      "department": true,
+      "profile": "../IMG/Ellipse -2.png",
+      "startDate": "Oct",
+      "id": 28
+    },
+    {
+      "name": "reshma",
+      "gender": "female",
+      "department": true,
+      "profile": "../IMG/Ellipse -1.png",
+      "startDate": "2018",
+      "id": 29
+    },
+    {
+      "name": "kiran",
+      "gender": "female",
+      "department": [
+        "Sales"
+      ],
+      "profile": "../IMG/Ellipse -1.png",
+      "startDate": "2020",
+      "id": 30
+    }
+  ]
 }

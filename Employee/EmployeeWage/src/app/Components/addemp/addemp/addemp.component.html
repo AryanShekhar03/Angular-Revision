@@ -14,6 +14,7 @@
         </div>
     </header>
     <div class="form-content">
+    <div class="form">
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="form-head"> Employee PayRoll form</div>
             <div class="row-content">
@@ -51,35 +52,25 @@
             </div>
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
-                <div>
-                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR" formControlName="department">
-                    <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales"
-                        formControlName="department">
-                    <label class="text" for="sales">Sales</label>
-                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance"
-                        formControlName="department">
-                    <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer"
-                        formControlName="department">
-                    <label class="text" for="engineer">Engineer</label>
-                    <input class="checkbox" type="checkbox" id="others" name="others" value="Others"
-                        formControlName="department">
-                    <label class="text" for="others">Others</label>
-                </div>
+                <div *ngFor="let dep of departmentList">
+                    <label>
+                      <input type="checkbox" [value]="dep.name" (change)="onCheckboxChange($event)">
+                      {{dep.name}}
+                    </label>
+                  </div>
             </div>
 
             <div class="row-content">
-                <label class="label text" for="salary" >Choose your salary</label>
+                <label class="label text" for="salary" formControlName="salary">Choose your salary</label>
                 <input class="input" type="range" name="salary" id="salary" min="30000" max="50000" step="100"
-                    value="40000"formControlName="salary">
+                    value="40000">
                 <output class="salary-output text" for="salary">40000</output>
             </div>
 
             <div class="row-content">
-                <label class="label text" for="startDate" formControlName="startDate">Start Date</label>
-                <div formControlName="startDate">
-                    <select id="day" name="Day" formControlName="startDate">
+                <label class="label text" for="startDate" >Start Date</label>
+                
+                    <select id="day" name="Day"formControlName="startDate">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -134,7 +125,7 @@
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
                     </select>
-                </div>
+                
             </div>
 
             <div class="row-content">
@@ -145,10 +136,11 @@
             <div class="buttonParent">
                 <a href="./EmpPayRoll.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton"(click)="onSubmit">Submit</button>
+                    <button type="submit" class="button submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
-            <!-- </div> -->
+            
     
         </form>
+</div>
