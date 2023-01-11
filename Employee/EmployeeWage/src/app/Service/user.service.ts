@@ -13,13 +13,8 @@ addemployee(data: any) {
   return this.httpservice.post("http://localhost:3000/employee",data)
 }
 employeeget() {
-  let header = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-     
-    })
-  }
-  return this.httpservice.get('http://localhost:3000/employee',header)
+  
+  return this.httpservice.get('http://localhost:3000/employee')
 }
 }
 

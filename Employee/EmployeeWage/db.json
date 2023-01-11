@@ -6,7 +6,8 @@
       "gender": "female",
       "id": 20,
       "startDate": "2018-11-28",
-      "department": []
+      "department": [],
+      "notes": "abcdef"
     },
     {
       "name": "Aaryan Shekhar",
@@ -105,6 +106,30 @@
       "startDate": "2023-01-11",
       "salary": 32500,
       "id": 32
+    },
+    {
+      "name": "Aaryan Shekhar",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "profile": "../IMG/Ellipse -2.png",
+      "startDate": "2022-02-03",
+      "salary": 36900,
+      "notes": "abc",
+      "id": 33
+    },
+    {
+      "name": "Aaryan Shekhar",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "profile": "../IMG/Ellipse -2.png",
+      "startDate": "2022-02-02",
+      "salary": 36900,
+      "notes": "abc",
+      "id": 34
     }
   ]
 }

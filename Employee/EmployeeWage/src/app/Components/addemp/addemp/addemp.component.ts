@@ -13,6 +13,7 @@ export class AddempComponent implements OnInit {
   submitted = false;
   salary =0;
   selectedDepartment:any=[]
+ 
   departmentList:any=[
     {name:"HR", value:'HR', checked:false},
     {name:"Finance", value:'Finance', checked:false},
@@ -30,6 +31,7 @@ export class AddempComponent implements OnInit {
       profile: ['', Validators.required],
       startDate:['', Validators.required],
       salary:['', Validators.required],
+        notes:['', Validators.required],
       
   });
 }
@@ -60,7 +62,8 @@ onCheckboxChange(event:any) {
       department:this.registerForm.value.department,
       profile:this.registerForm.value.profile,
       startDate:this.registerForm.value.startDate,
-      salary:this.registerForm.value.salary
+      salary:this.registerForm.value.salary,
+       notes:this.registerForm.value.notes
       }
       this.user.addemployee(employees).subscribe((result:any)=>{
         console.log(result)
