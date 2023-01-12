@@ -17,10 +17,7 @@
             <div class="emp-detail-text">
                 Employee Details <div class="emp-count">5</div>
             </div>
-            <a href="EmployeePayrollHTML.html" class="add-button">
-                <img src="" alt="">
-                Add User
-            </a>
+            <button class="add-button" routerLink="/addemp">Add User</button>
         </div>
         <div class="table-main">
             <table id="display" class="table">
@@ -32,87 +29,25 @@
                     <th>Start Date</th>
                     <th>Action</th>
                 </tr>
-                <!-- <tr>
-                    <td><img class="profile" src="../IMG/Ellipse -3.png" alt="">Rahul Anand</td>
-                    <td>Male</td>
-                    <td>
-                        <div class='dept-label'>Engineer</div>
-                        <div class='dept-label'>Development</div>
-                    </td>
-                    <td>500000</td>
-                    <td>24 Sept 2021</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" src="../IMG/delete.jpeg" alt="delete">
-                        <img id="1" onclick="update(this)" src="../IMG/update.jpeg" alt="update"> 
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img class="profile" src="../IMG/Ellipse -5.png" alt="">Ramesh</td>
-                    <td>Male</td>
-                    <td>
-                        <div class='dept-label'>Accountant</div>
-                        <div class='dept-label'>Tax</div>
-                    </td>
-                    <td>150000</td>
-                    <td>21 Sept 2020</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" src="../IMG/delete.jpeg" alt="delete">
-                        <img id="1" onclick="update(this)" src="../IMG/update.jpeg" alt="update"> 
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img class="profile" src="../IMG/Ellipse -8.png" alt="">Sachin</td>
-                    <td>Male</td>
-                    <td>
-                        <div class='dept-label'>Engineer</div>
-                        <div class='dept-label'>Backend</div>
-                    </td>
-                    <td>250000/td>
-                    <td>21 Dec 2021</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" src="../IMG/delete.jpeg" alt="delete">
-                        <img id="1" onclick="update(this)" src="../IMG/update.jpeg" alt="update"> 
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img class="profile" src="../IMG/Ellipse -10.png" alt="">Ayushi</td>
-                    <td>Female</td>
-                    <td>
-                        <div class='dept-label'>Engineer</div>
-                        <div class='dept-label'>FrontEnd</div>
-                    </td>
-                    <td>250000</td>
-                    <td>15 Sept 2021</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" src="../IMG/delete.jpeg" alt="delete">
-                        <img id="1" onclick="update(this)" src="../IMG/update.jpeg" alt="update"> 
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><img class="profile" src="../IMG/Ellipse -9.png" alt="">Deepesh C</td>
-                    <td>Male</td>
-                    <td>
-                        <div class='dept-label'>Engineer</div>
-                        <div class='dept-label'>FullStack</div>
-                    </td>
-                    <td>450000</td>
-                    <td> 18 Sept 2021</td>
-                    <td>
-                        <img id="1" onclick="remove(this)" src="../IMG/delete.jpeg" alt="delete">
-                        <img id="1" onclick="update(this)" src="../IMG/update.jpeg" alt="update"> 
-                    </td>
-                </tr> -->
+               
                 <tr *ngFor="let user of users">  
                     <!-- <td>{{ user.id }}</td>   -->
-                    <td>{{ user.name }}</td>  
+                    <td>
+                        
+                      <img src={{user.profile}} alt=""> 
+                        {{ user.name }}
+                       
+                    </td>  
                     <td>{{ user.gender }}</td>  
                     <td>{{ user.department }}</td>
                     <td>{{ user.salary }}</td> 
-                    <td>{{ user.startDate }}</td>  
+                    <td>{{ user.startDate }}</td> 
+                    <td>
+                        <img class="delete"(click)="onDelete(user.id)"src="assets/delete.png"  alt="image">
+                        <img class="edit" src="assets/edit.png" alt="image">
+                        
+                    </td>
+
                   
                     <!-- <td> <img  class="pic" src={{user.Profile}} alt=""> </td>  -->
                   </tr>  

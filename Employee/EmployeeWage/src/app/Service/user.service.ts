@@ -16,6 +16,11 @@ employeeget() {
   
   return this.httpservice.get('http://localhost:3000/employee')
 }
+deleteemployee(data:any) {
+  
+  
+  return this.httpservice.delete("http://localhost:3000/employee/"+data)
+}
 }
 
 

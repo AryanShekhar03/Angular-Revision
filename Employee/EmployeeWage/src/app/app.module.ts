@@ -18,13 +18,13 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { IconComponent } from './Components/icon/icon.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AddempComponent,
     DashboardComponent,
-    IconComponent,
+    
    
   ],
   imports: [
