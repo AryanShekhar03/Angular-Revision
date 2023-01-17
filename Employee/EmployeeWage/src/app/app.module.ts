@@ -18,12 +18,25 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
+// import { UpdateComponent } from './Components/update/update.component';
+// import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UpdateComponent } from './Components/update/update.component';
+//  import { UpdateComponent } from './Components/update/update.component';
+// import { updateComponent } from './Components/update/update.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AddempComponent,
     DashboardComponent,
+    UpdateComponent,
+    //  UpdateComponent,
+    // updateComponent,
     
    
   ],
@@ -42,6 +55,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule,
+    MatDialogModule
+    
     
   ],
   providers: [],

@@ -31,7 +31,7 @@
                 </tr>
                
                 <tr *ngFor="let user of users">  
-                    <!-- <td>{{ user.id }}</td>   -->
+                     <!-- <td>{{ user.id }}</td>    -->
                     <td>
                         
                       <img src={{user.profile}} alt=""> 
@@ -44,7 +44,7 @@
                     <td>{{ user.startDate }}</td> 
                     <td>
                         <img class="delete"(click)="onDelete(user.id)"src="assets/delete.png"  alt="image">
-                        <img class="edit" src="assets/edit.png" alt="image">
+                        <img class="edit" src="assets/edit.png" alt="image" (click)="openDialog(user)" >
                         
                     </td>
 

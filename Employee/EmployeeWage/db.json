@@ -1,29 +1,105 @@
 {
   "employee": [
     {
-      "name": "karishma",
-      "gender": "female",
-      "department": [
-        "Finance"
-      ],
-      "profile": "assets/Ellipse -1.png",
-      "startDate": "2022-01-03",
-      "salary": 34800,
-      "notes": "aaaaabbbccd",
-      "id": 36
-    },
-    {
       "name": "Aaryan Shekhar",
       "gender": "male",
       "department": [
-        "HR",
-        "Finance"
+        "HR"
       ],
       "profile": "assets/Ellipse -2.png",
       "startDate": "2023-01-12",
       "salary": 50000,
       "notes": "aaryan",
       "id": 37
+    },
+    {
+      "name": "rrr",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Sales",
+        "Others"
+      ],
+      "profile": "assets/Ellipse -2.png",
+      "startDate": "2023-01-03",
+      "salary": 37800,
+      "notes": "rrr",
+      "id": 40
+    },
+    {
+      "name": "goswami",
+      "gender": "female",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "profile": "assets/Ellipse -2.png",
+      "startDate": "2023-01-13",
+      "salary": 31400,
+      "notes": "aa",
+      "id": 41
+    },
+    {
+      "name": "n Shekhar",
+      "gender": "female",
+      "department": [
+        "HR"
+      ],
+      "profile": "assets/Ellipse -2.png",
+      "startDate": "2023-01-13",
+      "salary": 32200,
+      "notes": "a",
+      "id": 42
+    },
+    {
+      "name": "SHE",
+      "gender": "female",
+      "department": [
+        "HR"
+      ],
+      "profile": "assets/Ellipse -1.png",
+      "startDate": "2023-01-14",
+      "salary": 30000,
+      "notes": "SHE",
+      "id": 43
+    },
+    {
+      "name": "he",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "profile": "assets/Ellipse -3.png",
+      "startDate": "2023-01-14",
+      "salary": 32000,
+      "notes": "abc",
+      "id": 44
+    },
+    {
+      "name": "rahul anand",
+      "gender": "male",
+      "department": [
+        "Finance",
+        "Sales"
+      ],
+      "profile": "assets/Ellipse -2.png",
+      "startDate": "2023-01-14",
+      "salary": 31500,
+      "notes": "abc",
+      "id": 45
+    },
+    {
+      "name": "goswami",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "profile": "assets/Ellipse -1.png",
+      "startDate": "2023-01-14",
+      "salary": 30900,
+      "notes": "abc",
+      "id": 46
     }
   ]
 }

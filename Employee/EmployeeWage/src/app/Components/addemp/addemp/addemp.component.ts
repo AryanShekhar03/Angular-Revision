@@ -1,6 +1,9 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormGroupDirective, FormBuilder ,ReactiveFormsModule, FormArray} from '@angular/forms';
 import { UserService } from 'src/app/Service/user.service';
+// import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar'
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +24,7 @@ export class AddempComponent implements OnInit {
     {name:"Engineer", value:'Engineer', checked:false},
     {name:"Others", value:'Others', checked:false},
   ]
-  constructor(private formBuilder:FormBuilder,private user: UserService) { }
+  constructor(private formBuilder:FormBuilder,private user: UserService,private snackBar:MatSnackBar,private router: Router) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -63,14 +66,25 @@ onCheckboxChange(event:any) {
       profile:this.registerForm.value.profile,
       startDate:this.registerForm.value.startDate,
       salary:this.registerForm.value.salary,
-       notes:this.registerForm.value.notes
+      notes:this.registerForm.value.notes
       }
       this.user.addemployee(employees).subscribe((result:any)=>{
         console.log(result)
+        this.router.navigateByUrl('/display').then(() => {
+
+        this.snackBar.open("User added in", "OK", {
+          duration:4000,
+        })
+      });
+       
+          
+
       })
+      
     }
     
     }
+  
   
   
 
